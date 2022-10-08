@@ -1,0 +1,10 @@
+@font-face {
+    font-family: "Conthrax";
+    src: local("Conthrax"),
+     url("../fonts/Conthrax.otf") format("opentype");
+    font-weight: bold;
+    }
+
+body{
+    font-family: "Conthrax";
+}
