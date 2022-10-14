@@ -25,7 +25,7 @@ export default function LoginPage() {
   function handleLoginButton(event) {
     event.preventDefault();
     axios
-      .post("http://localhost:4000/api/login", {
+      .post("http://faceexsupport.com:4000/api/login", {
         email: email,
         password: password,
       })

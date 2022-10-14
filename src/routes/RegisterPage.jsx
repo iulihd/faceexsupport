@@ -14,7 +14,7 @@ export default function RegisterPage() {
   function handleRegisterButton(event) {
     event.preventDefault();
     axios
-      .post("http://localhost:4000/api/register", {
+      .post("http://faceexsupport.com:4000/api/register", {
         email: email,
         password: password,
         firstName: fname,
