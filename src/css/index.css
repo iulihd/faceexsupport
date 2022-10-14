@@ -5,6 +5,326 @@
     font-weight: bold;
     }
 
+html{
+    height: 100%;
+}
+
 body{
     font-family: "Conthrax";
+    height: 100%;
+    margin: 0;
 }
+
+.main-grid-container{
+    display: grid;
+    height: 100vh;
+    width: 100%;
+
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr auto;
+
+    grid-template-areas:
+    "header"
+    "content"
+    "footer";
+
+}
+
+.navbar-logo-img{
+    height: 40px;
+    width: 40px;
+    margin: 5px 10px;
+}
+
+.navbar-logo-title{
+    color: #0494d3;
+    font-size: 2rem;
+    margin: 5px 0px;
+}
+
+.navbar-logo-title:hover{
+    opacity: 0.8;
+    color: #0494d3;
+}
+
+.navbar-logo-title:active{
+    opacity: 0.5;
+    color: #0494d3;
+}
+
+
+.homepage-container{
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    color:#0494d3;
+    background-color: gainsboro;
+}
+
+.homepage-title{
+    font-size: 3rem;
+}
+
+.homepage-welcome{
+    text-align: center;
+    padding: 0 0 30px 0;
+    border-bottom: 1px solid silver;
+    width: 100%;
+    grid-area: header;
+}
+
+.homepage-buttons-container{
+    min-width: 30%;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    flex-direction: column;
+    gap: 30px;
+    font-size: 25px;
+    background-color: white;
+    border-radius: 15px;
+    padding: 30px 20px;
+}
+
+.homepage-button{
+    width: 100%;
+    height: 50px;
+    border: 1px solid;
+    background-color: #0494d3;
+    border-radius: 15px;
+    outline: none;
+    cursor: pointer;
+    font-size: 18px;
+    color: white;
+    text-decoration: none;
+}
+
+.homepage-button:hover{
+    border-color: #0494d3;
+    transition: 0.5s;
+}
+
+.footer-container{
+    grid-area: footer;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+    background-color: #808B96;
+    color: #EAECEE;
+    font-size: 1.1rem;
+    padding: 10px;
+}
+
+.login-form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    border-radius: 15px;
+    padding: 30px 40px;
+}
+
+.loginpage-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: gainsboro;
+    color: #0494d3;
+}
+
+.register-form{
+    display: grid;
+    width: auto;
+
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto 1fr 1fr 1fr auto auto;
+
+    grid-template-areas:
+    "header header"
+    "error error"
+    "lname fname"
+    "email email"
+    "password confirm"
+    "login login"
+    "already already";
+
+    background-color: white;
+    border-radius: 15px;
+    padding: 30px 40px;
+}
+
+.registerpage-container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: gainsboro;
+    color: #0494d3;
+    padding: 5% 5%;
+}
+
+.login-form h2,
+.register-form h2{
+    text-align: center;
+    padding: 0 0 20px 0;
+    border-bottom: 1px solid silver;
+    width: 100%;
+    grid-area: header;
+}
+
+.register-login{
+    grid-area: login;
+}
+.register-already{
+    grid-area: already;
+}
+.register-email{
+    grid-area: email;
+}
+
+form .login-textfield{
+position: relative;
+border-bottom: 2px solid #adadad;
+margin: 30px 5px;
+}
+
+.login-textfield input{
+    width: 100%;
+    padding: 0 5px;
+    height: 40px;
+    font-size: 16px;
+    border: none;
+    background: none;
+    outline: none;
+}
+
+.login-textfield label{
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    color: #adadad;
+    transform: translateY(-50%);
+    font-size: 16px;
+    pointer-events: none;
+    transition: 0.5s;
+}
+
+.login-textfield span::before{
+    content: "";
+    position: absolute;
+    top: 40px;
+    left: 0;
+    width: 0%;
+    height: 2px;
+    background-color: #0494d3;
+    transition: 0.5s;
+}
+
+.login-textfield input:focus ~ label,
+.login-textfield input:valid ~ label{
+    top: -5px;
+    color: #0494d3;
+}
+
+.login-textfield input:focus ~ span::before,
+.login-textfield input:valid ~ span::before{
+    width: 100%;
+}
+
+button[type="submit"]{
+    width: 100%;
+    height: 50px;
+    border: 1px solid;
+    background-color: #0494d3;
+    color: white;
+    border-radius: 15px;
+    outline: none;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+button[type="submit"]:hover{
+    border-color: #0494d3;
+    transition: 0.5s;
+}
+
+div .login-button{
+    width: 100%;
+}
+
+.signup-link{
+    margin: 30px 0 0 0;
+    text-align: center;
+    font-size: 16px;
+    color: #666666;
+}
+.signup-link .signup-link-link{
+    color:#0494d3;
+    text-decoration: none;
+}
+
+.signup-link .signup-link-link:hover{
+    text-decoration: underline;
+}
+
+.login-errorfield{
+    grid-area: error;
+    color: #B71C1C ;
+    width: 100%;
+    background-color: #FADBD8;
+    border-radius: 7px;
+    text-align: center;
+    transition: 0.5s;
+}
+
+@media only screen and (max-width: 750px) {
+
+    .register-form{
+        display: grid;
+        width: auto;
+    
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto 1fr 1fr 1fr 1fr 1fr auto auto;
+    
+        grid-template-areas:
+        "header"
+        "error"
+        "fname"
+        "lname"
+        "email"
+        "password"
+        "confirm"
+        "login"
+        "already";
+    }
+
+    .homepage-buttons-container{
+        min-width: 75%;
+        margin: 5%;
+    }
+  }
+
+  .navbar{
+    --bs-navbar-brand-hover-color: #0494d3;
+  }
+
+  .navbar-nav{
+    --bs-nav-link-hover-color: #0494d3;
+  }
+
+  #error-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:center;
+    width: 100%;
+    height: 100vh;
+  }
