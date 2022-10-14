@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/faceexsupport/static/css/main.f198777c.css",
-    "main.js": "/faceexsupport/static/js/main.cbb77907.js",
+    "main.js": "/faceexsupport/static/js/main.a423dae0.js",
     "static/media/Conthrax.otf": "/faceexsupport/static/media/Conthrax.787c73c4164cc642bfd1.otf",
     "index.html": "/faceexsupport/index.html",
     "main.f198777c.css.map": "/faceexsupport/static/css/main.f198777c.css.map",
-    "main.cbb77907.js.map": "/faceexsupport/static/js/main.cbb77907.js.map"
+    "main.a423dae0.js.map": "/faceexsupport/static/js/main.a423dae0.js.map"
   },
   "entrypoints": [
     "static/css/main.f198777c.css",
-    "static/js/main.cbb77907.js"
+    "static/js/main.a423dae0.js"
   ]
 }
