@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/faceexsupport.com/static/css/main.35095550.css",
-    "main.js": "/faceexsupport.com/static/js/main.cbb77907.js",
-    "static/media/Conthrax.otf": "/faceexsupport.com/static/media/Conthrax.787c73c4164cc642bfd1.otf",
-    "index.html": "/faceexsupport.com/index.html",
-    "main.35095550.css.map": "/faceexsupport.com/static/css/main.35095550.css.map",
-    "main.cbb77907.js.map": "/faceexsupport.com/static/js/main.cbb77907.js.map"
+    "main.css": "/faceexsupport/static/css/main.f198777c.css",
+    "main.js": "/faceexsupport/static/js/main.cbb77907.js",
+    "static/media/Conthrax.otf": "/faceexsupport/static/media/Conthrax.787c73c4164cc642bfd1.otf",
+    "index.html": "/faceexsupport/index.html",
+    "main.f198777c.css.map": "/faceexsupport/static/css/main.f198777c.css.map",
+    "main.cbb77907.js.map": "/faceexsupport/static/js/main.cbb77907.js.map"
   },
   "entrypoints": [
-    "static/css/main.35095550.css",
+    "static/css/main.f198777c.css",
     "static/js/main.cbb77907.js"
   ]
 }
